@@ -1,0 +1,20 @@
+@forward "./variables";
+@use "./variables";
+
+
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$secondary-color;
+}
+
+.main {
+    min-width: 800px;
+    background-color: variables.$light-color;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
+}

@@ -1,18 +1,12 @@
 import React from 'react';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import PropTypes from 'prop-types';
+import Head from '../../components/Head';
 import styles from '../../styles/ItemDetails.module.scss';
 
-export default function ItemDetails() {
-  const router = useRouter();
-  const { id } = router.query;
-
+function ItemDetails({ id }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Mercado Libre</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head />
 
       <main className={styles.main}>
 
@@ -22,17 +16,26 @@ export default function ItemDetails() {
 
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          {' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   );
 }
+
+ItemDetails.propTypes = {
+  id: PropTypes.string,
+};
+
+ItemDetails.defaultProps = {
+  id: null,
+};
+
+export async function getServerSideProps(context) {
+  const { id } = context.query;
+
+  return {
+    props: {
+      id,
+    },
+  };
+}
+
+export default ItemDetails;
