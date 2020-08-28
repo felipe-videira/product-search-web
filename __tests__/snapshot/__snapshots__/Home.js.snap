@@ -2,73 +2,35 @@
 
 exports[`Render home page 1`] = `
 <div>
-  <main>
-    <h1>
-      Welcome to
-    </h1>
-    <p>
-      Get started by editing
-       
-      <code>
-        pages/index.js
-      </code>
-    </p>
-    <div>
-      <a
-        href="https://nextjs.org/docs"
-      >
-        <h3>
-          Documentation →
-        </h3>
-        <p>
-          Find in-depth information about Next.js features and API.
-        </p>
-      </a>
-      <a
-        href="https://nextjs.org/learn"
-      >
-        <h3>
-          Learn →
-        </h3>
-        <p>
-          Learn about Next.js in an interactive course with quizzes!
-        </p>
-      </a>
-      <a
-        href="https://github.com/vercel/next.js/tree/master/examples"
-      >
-        <h3>
-          Examples →
-        </h3>
-        <p>
-          Discover and deploy boilerplate example Next.js projects.
-        </p>
-      </a>
-      <a
-        href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      >
-        <h3>
-          Deploy →
-        </h3>
-        <p>
-          Instantly deploy your Next.js site to a public URL with Vercel.
-        </p>
-      </a>
-    </div>
-  </main>
-  <footer>
-    <a
-      href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      rel="noopener noreferrer"
-      target="_blank"
+  <nav>
+    <img
+      alt="Mercado Libre"
+      height="50"
+      src="/assets/images/logo.png"
+      width="75"
+    />
+    <form
+      action="/items"
+      method="GET"
+      name="searchBar"
+      onSubmit={[Function]}
     >
-      Powered by
-       
-      <img
-        alt="Vercel Logo"
-        src="/vercel.svg"
+      <input
+        name="search"
+        placeholder="Nunca dejes de buscar"
+        type="text"
       />
-    </a>
-  </footer>
+      <button
+        type="submit"
+      >
+        <img
+          alt="Busca"
+          height="20"
+          src="/assets/images/search.svg"
+          width="20"
+        />
+      </button>
+    </form>
+  </nav>
 </div>
 `;
