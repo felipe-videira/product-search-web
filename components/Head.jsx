@@ -1,10 +1,11 @@
 import React from 'react';
+import NextHead from 'next/head'
 
 export default function Head() {
   return (
-    <Head>
+    <NextHead>
       <title>Mercado Libre</title>
       <link rel="icon" href="/favicon.ico" />
-    </Head>
+    </NextHead>
   );
 }

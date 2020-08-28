@@ -1,0 +1,42 @@
+@use './base';
+
+.product-preview {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+
+    &__pic {
+        border-radius: base.$border-radius;
+        margin: 15px;
+    }
+
+    &__info {
+        flex: 1;
+        padding: 36px 0;
+    }
+
+    &__price {
+        font-size: 32px;
+        color: base.$dark-color;
+    }
+
+    &__title {
+        color: base.$dark-color;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    &__city {
+        margin: 5% 0 0 0;
+        color: base.$light-dark-color;
+        font-size: 19px;
+        flex: .2;
+    }
+
+    .free-shipping-icon {
+        background-color: #3ecc5f;
+        padding: 5px;
+        border-radius: 12.5px;
+    }
+}

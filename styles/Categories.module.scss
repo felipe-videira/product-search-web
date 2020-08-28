@@ -1,0 +1,22 @@
+@use './base';
+
+ul.categories {
+    list-style: none;
+    color: base.$light-dark-color;
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 15px;
+
+    li {
+        display: inline;
+        
+        &+li:before {
+            padding: 8px;
+            content: ">";
+        }
+
+        &:last-child {
+            font-weight: bold; 
+        }
+    }
+}
