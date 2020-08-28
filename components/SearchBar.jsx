@@ -1,37 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styles from '../styles/SearchBar.module.scss';
 
-function SearchBar({ value }) {
-  const getForm = () => document.forms.searchBar;
+function SearchBar({ initialValue }) {
+  const [search, setSearch] = useState(initialValue);
 
-  const validateForm = () => !!getForm().search.value;
-
-  const initValues = () => {
-    getForm().search.setAttribute('value', value);
-  };
-
-  useEffect(() => {
-    initValues();
+  const onChange = useCallback((evt) => {
+    setSearch(evt.target.value);
   }, []);
+
+  const onSubmit = useCallback(() => !!search, [search]);
 
   return (
     <nav className={styles.searchBar}>
-      <img
-        src="/assets/images/logo.png"
-        width="75"
-        height="50"
-        alt="Mercado Libre"
-      />
+      <a href="/">
+        <img
+          src="/assets/images/logo.png"
+          width="75"
+          height="50"
+          alt="Mercado Libre"
+        />
+      </a>
       <form
         name="searchBar"
         method="GET"
         action="/items"
-        onSubmit={validateForm}
+        onSubmit={onSubmit}
       >
         <input
           type="text"
           name="search"
+          value={search}
+          onChange={onChange}
           placeholder="Nunca dejes de buscar"
         />
         <button type="submit">
@@ -48,11 +48,11 @@ function SearchBar({ value }) {
 }
 
 SearchBar.propTypes = {
-  value: PropTypes.string,
+  initialValue: PropTypes.string,
 };
 
 SearchBar.defaultProps = {
-  value: '',
+  initialValue: null,
 };
 
 export default SearchBar;

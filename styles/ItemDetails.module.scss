@@ -1,1 +1,76 @@
-@use './base'
+@use './base';
+
+.item-details {
+    padding: 15px 36px; 
+    display: grid;
+    grid-template-areas: 
+        'pic info'
+        'desc info';
+
+    &__pic {
+        grid-area: pic;
+        border-radius: 4px;
+        margin: 15px 0;
+        width: 95%;
+        height: 750px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__info {
+        grid-area: info;
+        width: 325px;
+
+        &__status {
+            color: base.$dark-color;
+            font-size: 1.6rem;
+            margin: 15px 0 0 0;
+        }
+
+        h1 {
+            color: base.$dark-color;
+            font-size: 2.4rem;
+            margin: 10px 0 0 0;
+        }
+
+        &__price {
+            color: base.$dark-color;
+            font-size: 4.8rem;
+            position: relative;
+            margin: 18px 0 54px;
+
+            &::after {
+                content: attr(data-end);
+                font-size: 2.4rem;
+                position: absolute;
+                top: 7px;
+                padding: 0px 4px;
+            }
+        }
+
+        button {
+            color: base.$light-color;
+            font-size: 2.1rem;
+            border: none;
+            width: 100%;
+            height: 48px;
+            background-color: base.$accent-color;
+            border-radius: base.$border-radius;
+        }
+    }
+
+    &__desc {
+        grid-area: desc;
+        color: base.$light-dark-color;
+        font-size: 1.8rem;
+
+        h2 {
+            margin: 38px 0;
+            color: base.$dark-color;
+            font-weight: normal;
+            font-size: 2.8rem;
+        }
+    }
+}
+

@@ -3,12 +3,16 @@
 exports[`Render home page 1`] = `
 <div>
   <nav>
-    <img
-      alt="Mercado Libre"
-      height="50"
-      src="/assets/images/logo.png"
-      width="75"
-    />
+    <a
+      href="/"
+    >
+      <img
+        alt="Mercado Libre"
+        height="50"
+        src="/assets/images/logo.png"
+        width="75"
+      />
+    </a>
     <form
       action="/items"
       method="GET"
@@ -17,8 +21,10 @@ exports[`Render home page 1`] = `
     >
       <input
         name="search"
+        onChange={[Function]}
         placeholder="Nunca dejes de buscar"
         type="text"
+        value={null}
       />
       <button
         type="submit"

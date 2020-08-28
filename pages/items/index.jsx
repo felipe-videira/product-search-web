@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
 import Head from '../../components/Head';
 import styles from '../../styles/Items.module.scss';
 import SearchBar from '../../components/SearchBar';
@@ -8,10 +9,16 @@ import Categories from '../../components/Categories';
 import ProductPreview from '../../components/ProductPreview';
 
 function Items({ search, items, categories }) {
+  const router = useRouter();
+
+  const onProductSelected = useCallback((id) => {
+    router.push('items/[id]', `items/${id}`);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head />
-      <SearchBar value={search} />
+      <SearchBar initialValue={search} />
 
       <main className={styles.main}>
         <Categories value={categories} />
@@ -19,6 +26,8 @@ function Items({ search, items, categories }) {
         <div className={styles.content}>
           {items.map((item) => (
             <ProductPreview
+              onClick={() => onProductSelected(item.id)}
+              key={item.id}
               title={item.title}
               price={item.price}
               picture={item.picture}

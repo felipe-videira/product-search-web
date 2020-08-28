@@ -22,3 +22,10 @@ export const CURRENCIES_SYMBOLS = {
   VEF: 'Bs.',
   VES: 'Bs.',
 };
+
+export const ENTER_KEY = 'Enter';
+
+export const CONDITIONS = {
+  used: 'Usado',
+  new: 'Nuevo',
+};

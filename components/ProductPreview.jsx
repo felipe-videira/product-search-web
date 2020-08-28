@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useCallback, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import styles from '../styles/ProductPreview.module.scss';
-import { CURRENCIES_SYMBOLS } from '../contants';
-
-const formatPrice = ({ currency, amount, decimals }) => `${CURRENCIES_SYMBOLS[currency]} ${amount},${decimals * 100}`;
+import { ENTER_KEY } from '../contants';
+import { formatPrice } from '../utils';
 
 const FreeShippingIcon = (
   <img
@@ -21,23 +20,36 @@ function ProductPreview({
   picture,
   free_shipping,
   city_name,
+  onClick,
 }) {
+  const formattedPrice = useMemo(() => {
+    return formatPrice(price.currency, price.amount, price.decimals);
+  }, [price]);
+
+  const onKeyPress = useCallback((evt) => {
+    if (evt.key === ENTER_KEY) {
+      onClick();
+    }
+  }, [onClick]);
+
   return (
-    <div className={styles.productPreview}>
-      <img
+    <div
+      className={styles.productPreview}
+      onClick={onClick}
+      onKeyPress={onKeyPress}
+      tabIndex="0"
+      role="link"
+    >
+      <div
         className={styles.productPreviewPic}
-        src={picture}
-        width="250"
-        height="250"
-        alt="Foto"
+        style={{ backgroundImage: `url(${picture})` }}
       />
       <div className={styles.productPreviewInfo}>
-        <span className={styles.productPreviewPrice}>
-          {formatPrice(price)}
-          {' '}
+        <div className={styles.productPreviewInfoPrice}>
+          <span>{formattedPrice}</span>
           {free_shipping && FreeShippingIcon}
-        </span>
-        <h2 className={styles.productPreviewTitle}>{title}</h2>
+        </div>
+        <h2 className={styles.productPreviewInfoTitle}>{title}</h2>
       </div>
       <p className={styles.productPreviewCity}>{city_name}</p>
     </div>
@@ -54,6 +66,7 @@ ProductPreview.propTypes = {
   picture: PropTypes.string.isRequired,
   free_shipping: PropTypes.bool.isRequired,
   city_name: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ProductPreview;
