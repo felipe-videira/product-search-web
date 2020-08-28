@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render home page 1`] = `
+exports[`Home Should render without crashing 1`] = `
 <div>
   <nav>
     <a

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Items Should render without crashing 1`] = `
+<div>
+  <nav>
+    <a
+      href="/"
+    >
+      <img
+        alt="Mercado Libre"
+        height="50"
+        src="/assets/images/logo.png"
+        width="75"
+      />
+    </a>
+    <form
+      action="/items"
+      method="GET"
+      name="searchBar"
+      onSubmit={[Function]}
+    >
+      <input
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value="xbox"
+      />
+      <button
+        type="submit"
+      >
+        <img
+          alt="Busca"
+          height="20"
+          src="/assets/images/search.svg"
+          width="20"
+        />
+      </button>
+    </form>
+  </nav>
+  <main>
+    <ul>
+      <li>
+        Consolas y Videojuegos
+      </li>
+      <li>
+        Consolas
+      </li>
+    </ul>
+    <div>
+      <div
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="link"
+        tabIndex="0"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(../../__mocks__/data/product_img.jpg)",
+            }
+          }
+        />
+        <div>
+          <div>
+            <span>
+              $ 55,998
+            </span>
+            <img
+              alt="Flete gratis"
+              height="25"
+              src="/assets/images/truck.svg"
+              width="25"
+            />
+          </div>
+          <h2>
+            Microsoft Xbox One S 1tb Two-controller Bundle Blanco
+          </h2>
+        </div>
+        <p>
+          Villa del Parque
+        </p>
+      </div>
+      <div
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="link"
+        tabIndex="0"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(../../__mocks__/data/product_img.jpg)",
+            }
+          }
+        />
+        <div>
+          <div>
+            <span>
+              $ 47,900
+            </span>
+            <img
+              alt="Flete gratis"
+              height="25"
+              src="/assets/images/truck.svg"
+              width="25"
+            />
+          </div>
+          <h2>
+            Microsoft Xbox One S 1tb Pro Evolution Soccer 2019 Bundle Edition Blanco
+          </h2>
+        </div>
+        <p>
+          Pilar
+        </p>
+      </div>
+      <div
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="link"
+        tabIndex="0"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(../../__mocks__/data/product_img.jpg)",
+            }
+          }
+        />
+        <div>
+          <div>
+            <span>
+              $ 68,990
+            </span>
+            <img
+              alt="Flete gratis"
+              height="25"
+              src="/assets/images/truck.svg"
+              width="25"
+            />
+          </div>
+          <h2>
+            Microsoft Xbox One S 1tb Fortnite Blanco
+          </h2>
+        </div>
+        <p>
+          Pilar
+        </p>
+      </div>
+      <div
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="link"
+        tabIndex="0"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(../../__mocks__/data/product_img.jpg)",
+            }
+          }
+        />
+        <div>
+          <div>
+            <span>
+              $ 48,999
+            </span>
+            <img
+              alt="Flete gratis"
+              height="25"
+              src="/assets/images/truck.svg"
+              width="25"
+            />
+          </div>
+          <h2>
+            Microsoft Xbox One S 1tb Pro Evolution Soccer 2020 Blanco
+          </h2>
+        </div>
+        <p>
+          Caballito
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+`;

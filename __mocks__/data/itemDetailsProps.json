@@ -1,0 +1,20 @@
+{
+    "item": {
+        "id": "MLA865203548",
+        "title": "Microsoft Xbox One S 1tb Two-controller Bundle Blanco",
+        "price": {
+            "currency": "ARS",
+            "amount": 55599,
+            "decimals": 0
+        },
+        "picture": "../../__mocks__/data/product_img.jpg",
+        "condition": "new",
+        "free_shipping": true,
+        "sold_quantity": 50,
+        "description": "No solo vas a poder descargar los mejores videojuegos y navegar en la web sin límite, sino que, gracias a su interconectividad global, también vas a tener la posibilidad de competir en línea con tus amigos y con personas de todas partes del mundo disfrutando de aventuras inolvidables.\n\nCalidad de otro nivel\nSe considera que esta consola es la mejor dentro del mercado, dado que presenta una resolución de hasta 4K. Su conexión wifi te permitirá reproducir música, películas y tus series favoritas a través de las aplicaciones descargables.\n\nDiseño innovador\nMicrosoft Xbox One S ofrece impresionantes gráficos, sonido de primer nivel e incluso la posibilidad de guardar todas tus partidas en la nube.Su control combina un elegante estilo y agarre en relieve para brindar una mayor comodidad.\n\nAdaptada a tus necesidades\nGuardá tus apps, fotos, videos y mucho más en el disco duro, que cuenta con una capacidad de 1 TB. Al contar con un procesador de 8 núcleos y un procesador gráfico, brinda una experiencia dinámica, respuestas ágiles, así como transiciones fluidas de imágenes en alta definición. Por otro lado, tiene puerto USB y salida HDMI, que permiten conectar accesorios y cargar la batería de tu control mientras jugás."
+    },
+    "categories": [
+        "Consolas y Videojuegos",
+        "Consolas"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "search": "xbox",
+    "items": [
+        {
+            "id": "MLA865203548",
+            "title": "Microsoft Xbox One S 1tb Two-controller Bundle Blanco",
+            "price": {
+                "currency": "ARS",
+                "amount": 55998,
+                "decimals": 0
+            },
+            "picture": "../../__mocks__/data/product_img.jpg",
+            "condition": "new",
+            "free_shipping": true,
+            "city_name": "Villa del Parque"
+        },
+        {
+            "id": "MLA856073032",
+            "title": "Microsoft Xbox One S 1tb Pro Evolution Soccer 2019 Bundle Edition Blanco",
+            "price": {
+                "currency": "ARS",
+                "amount": 47900,
+                "decimals": 0
+            },
+            "picture": "../../__mocks__/data/product_img.jpg",
+            "condition": "new",
+            "free_shipping": true,
+            "city_name": "Pilar"
+        },
+        {
+            "id": "MLA870479844",
+            "title": "Microsoft Xbox One S 1tb Fortnite Blanco",
+            "price": {
+                "currency": "ARS",
+                "amount": 68990,
+                "decimals": 0
+            },
+            "picture": "../../__mocks__/data/product_img.jpg",
+            "condition": "new",
+            "free_shipping": true,
+            "city_name": "Pilar"
+        },
+        {
+            "id": "MLA875073601",
+            "title": "Microsoft Xbox One S 1tb Pro Evolution Soccer 2020 Blanco",
+            "price": {
+                "currency": "ARS",
+                "amount": 48999,
+                "decimals": 0
+            },
+            "picture": "../../__mocks__/data/product_img.jpg",
+            "condition": "new",
+            "free_shipping": true,
+            "city_name": "Caballito"
+        }
+    ],
+    "categories": [
+        "Consolas y Videojuegos",
+        "Consolas"
+    ]
+}

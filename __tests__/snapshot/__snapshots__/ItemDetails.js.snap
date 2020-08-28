@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetails Should render without crashing 1`] = `
+<div>
+  <nav>
+    <a
+      href="/"
+    >
+      <img
+        alt="Mercado Libre"
+        height="50"
+        src="/assets/images/logo.png"
+        width="75"
+      />
+    </a>
+    <form
+      action="/items"
+      method="GET"
+      name="searchBar"
+      onSubmit={[Function]}
+    >
+      <input
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value={null}
+      />
+      <button
+        type="submit"
+      >
+        <img
+          alt="Busca"
+          height="20"
+          src="/assets/images/search.svg"
+          width="20"
+        />
+      </button>
+    </form>
+  </nav>
+  <main>
+    <ul>
+      <li>
+        Consolas y Videojuegos
+      </li>
+      <li>
+        Consolas
+      </li>
+    </ul>
+    <div>
+      <div>
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(../../__mocks__/data/product_img.jpg)",
+            }
+          }
+        />
+        <div>
+          <p>
+            Nuevo - 50 vendidos
+          </p>
+          <h1>
+            Microsoft Xbox One S 1tb Two-controller Bundle Blanco
+          </h1>
+          <p
+            data-end="00"
+          >
+            $ 55,599
+          </p>
+          <button
+            type="button"
+          >
+            Comprar
+          </button>
+        </div>
+        <div>
+          <h2>
+            Descripción del producto
+          </h2>
+          <p>
+            No solo vas a poder descargar los mejores videojuegos y navegar en la web sin límite, sino que, gracias a su interconectividad global, también vas a tener la posibilidad de competir en línea con tus amigos y con personas de todas partes del mundo disfrutando de aventuras inolvidables.
+
+Calidad de otro nivel
+Se considera que esta consola es la mejor dentro del mercado, dado que presenta una resolución de hasta 4K. Su conexión wifi te permitirá reproducir música, películas y tus series favoritas a través de las aplicaciones descargables.
+
+Diseño innovador
+Microsoft Xbox One S ofrece impresionantes gráficos, sonido de primer nivel e incluso la posibilidad de guardar todas tus partidas en la nube.Su control combina un elegante estilo y agarre en relieve para brindar una mayor comodidad.
+
+Adaptada a tus necesidades
+Guardá tus apps, fotos, videos y mucho más en el disco duro, que cuenta con una capacidad de 1 TB. Al contar con un procesador de 8 núcleos y un procesador gráfico, brinda una experiencia dinámica, respuestas ágiles, así como transiciones fluidas de imágenes en alta definición. Por otro lado, tiene puerto USB y salida HDMI, que permiten conectar accesorios y cargar la batería de tu control mientras jugás.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;
