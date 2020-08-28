@@ -1,30 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Search Web
+An simplified version of [Mercado Libre's](https://mercadolibre.com/) website in React and Next.js. Also check the [Product Search API](https://github.com/felipe-videira/product-search-api).
 
-## Getting Started
 
-First, run the development server:
+## Table of Contents
 
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Stats](#stats)
+
+
+## Requirements
+Node ^12.x
+
+
+## Installation
+Install [Node](https://nodejs.org/pt-br/download/)
+
+Create a file named ".env.local" on the root folder with the information exemplified on the ".env.example" file
+
+Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run
+```bash
+$ npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Stats
+ - React v13
+ - Next.js v9
